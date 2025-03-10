@@ -7,10 +7,12 @@
 //Teste larissa
 
 int main() {
-    char cod_cidade[4];
-    char cidade[50];
-    int populacao, pontos_turisticos;
-    float area, pib;
+    char cod_cidade[4], cod_cidade2[4], cod_cidade3[4], cod_cidade4[4];
+    char cidade[50], cidade2[50], cidade3[50], cidade4[50];
+    int populacao, populacao2, populacao3, populacao4; 
+    int pontos_turisticos, pontos_turisticos2, pontos_turisticos3, pontos_turisticos4;
+    float area, area2, area3, area4; 
+    float pib, pib2, pib3, pib4;
 
     printf("\nCadastro de Cartas:\n");
     printf("\n  As cartas serão divididas por estados, cada um com quatro cidades. Imagine um país dividido em oito estados (A a H), e cada estado com quatro cidades (1 a 4). A combinação forma o código da Cidade (ex: A01, B02).\n");
@@ -34,7 +36,29 @@ int main() {
     printf("Informe o PIB: ");
     scanf("%f", &pib);
 
-    printf("\nCarta cadastrada com sucesso!\n");
+    printf("\nCarta 01 cadastrada com sucesso! Por favor, cadastre a seguir a carta 02.\n");
+
+    printf("\nCarta 02:");
+
+    printf("\nInforme o código da cidade: ");
+    scanf("%s", cod_cidade2);
+
+    printf("Informe o nome da cidade: ");
+    scanf("%s", cidade2);
+
+    printf("Informe a quantidade de habitantes: ");
+    scanf("%d", &populacao2);
+
+    printf("Informe a quantidade de pontos turisticos: ");
+    scanf("%d", &pontos_turisticos2);
+
+    printf("Informe a área da cidade: ");
+    scanf("%f", &area2);
+
+    printf("Informe o PIB: ");
+    scanf("%f", &pib2);
+
+    printf("\nCarta 02 cadastrada com sucesso!\n");
 
     printf("\nCarta 01:\n");
     printf("Código da Cidade: %s\n", cod_cidade);
@@ -43,6 +67,14 @@ int main() {
     printf("Pontos Turisticos: %d\n", pontos_turisticos);
     printf("Área: %.3f\n", area);
     printf("PIB: %.3f\n", pib);
+
+    printf("\nCarta 02:\n");
+    printf("Código da Cidade: %s\n", cod_cidade2);
+    printf("Cidade: %s\n", cidade2);
+    printf("População: %d\n", populacao2);
+    printf("Pontos Turisticos: %d\n", pontos_turisticos2);
+    printf("Área: %.3f\n", area2);
+    printf("PIB: %.3f\n", pib2);
 
     return 0;
 }
